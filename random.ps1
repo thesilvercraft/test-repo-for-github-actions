@@ -1,2 +1,2 @@
 $e =Get-Random
-echo ::set-output name=Random::$e
+echo "::set-output name=Random::$e"
