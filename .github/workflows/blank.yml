@@ -31,4 +31,4 @@ jobs:
         shell: powershell
         run: .\random.ps1
       - name: try and repeat the output 
-        run: echo ${{ steps.random.Random }}
+        run: echo "${{ steps.random.Random }}"
