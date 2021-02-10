@@ -29,6 +29,8 @@ jobs:
       - name: Run the random script
         id: E
         shell: powershell
-        run: .\random.ps1
+        run: |
+          $e =Get-Random
+          echo "::set-output name=Random::$e"
       - name: try and repeat the output 
         run: echo "${{ steps.E.outputs.Random }}"
